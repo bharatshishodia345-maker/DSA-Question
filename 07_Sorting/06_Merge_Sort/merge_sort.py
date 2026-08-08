@@ -1,4 +1,4 @@
-# merge sort6
+# merge sort
 
 def merge_sorted(arr1, arr2, arr):
     
