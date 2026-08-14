@@ -44,7 +44,9 @@ I am solving array problems step-by-step to improve:
 | 05 | Three Sum / Triplet | Three Nested Loops | O(n³) | O(1) |
 | 06 | Sort 0 and 1 | Two Pointer | O(n) | O(1) |
 | 07 | Sort 0, 1 and 2 | Dutch National Flag | O(n) | O(1) |
-
+| 08 | First & Last Occurrence | Binary Search twice| O(log n) + O(log n) = O(log n)|
+| 09 | First, Last & Total Occurrences | Binary Search | O(log n) | O(1) |
+| 10 | Find Peak Element | Binary Search | O(log n) | O(1) |
 > **Note:** `k` represents the number of common elements stored in the result.
 
 ---
@@ -424,6 +426,167 @@ Through these problems, I practiced:
 - Space Complexity
 
 ---
+# 🔍 First & Last Occurrence
+
+## Problem
+
+Given a **sorted array** and a target value, find the **first occurrence** and **last occurrence** of that value using Binary Search.
+
+### Example
+
+```text
+Input:
+Array = [2, 3, 8, 7, 8, 8, 10, 15, 19, 20]
+Target = 8
+
+Output:
+First occurrence: 2
+Last occurrence: 5
+```
+
+> ⚠️ **Important:** Binary Search requires the array to be sorted.
+> The example array above is **not sorted** because `7` comes after `8`. For Binary Search, use:
+>
+> `[2, 3, 7, 8, 8, 8, 10, 15, 19, 20]`
+
+For the sorted array:
+
+```text
+First occurrence: 3
+Last occurrence: 5
+```
+
+---
+
+## Approach
+
+We use **Binary Search** twice.
+
+### First Occurrence
+
+When the target is found:
+
+```cpp
+ans = mid;
+end = mid - 1;
+```
+
+Instead of stopping, we continue searching toward the **left side** to find an earlier occurrence.
+
+### Last Occurrence
+
+When the target is found:
+
+```cpp
+ans = mid;
+start = mid + 1;
+```
+
+We continue searching toward the **right side** to find a later occurrence.
+
+---
+
+## Algorithm
+
+### First Occurrence
+
+1. Set `start = 0`.
+2. Set `end = size - 1`.
+3. Calculate `mid`.
+4. If `arr[mid] == value`:
+
+   * Store `mid` in `ans`.
+   * Search left using `end = mid - 1`.
+5. If `arr[mid] < value`, search right.
+6. Otherwise, search left.
+7. Return `ans`.
+
+### Last Occurrence
+
+1. Set `start = 0`.
+2. Set `end = size - 1`.
+3. Calculate `mid`.
+4. If `arr[mid] == value`:
+
+   * Store `mid` in `ans`.
+   * Search right using `start = mid + 1`.
+5. If `arr[mid] < value`, search right.
+6. Otherwise, search left.
+7. Return `ans`.
+
+---
+
+## Example
+
+```text
+Sorted Array:
+
+Index:  0  1  2  3  4  5   6   7   8   9
+Value:  2  3  7  8  8  8  10  15  19  20
+                  ↑     ↑
+                First  Last
+```
+
+Target = `8`
+
+```text
+First occurrence = 3
+Last occurrence  = 5
+```
+
+---
+
+## Complexity
+
+Each search uses Binary Search.
+
+```text
+Time Complexity:
+O(log n)
+
+Space Complexity:
+O(1)
+```
+
+Since Binary Search is performed twice:
+
+```text
+O(log n) + O(log n) = O(log n)
+```
+
+---
+
+## Key Concept
+
+The important difference between normal Binary Search and this problem is:
+
+```text
+Normal Binary Search
+→ Target found → return immediately
+
+First Occurrence
+→ Target found → move LEFT
+
+Last Occurrence
+→ Target found → move RIGHT
+```
+
+---
+
+## File
+
+```text
+Cpp/08_First_Last_Occurrence.cpp
+```
+
+## Learning
+
+* Binary Search
+* Searching in sorted arrays
+* First occurrence
+* Last occurrence
+* Boundary-based searching
+* O(log n) time complexity
 
 # 🚀 Future Problems
 
