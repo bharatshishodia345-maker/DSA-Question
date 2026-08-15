@@ -16,14 +16,21 @@ I am solving array problems step-by-step to improve:
 ```text
 02_Arrays/
 │
-├── Cpp/
+├── C++_syntax/
 │   ├── 01_Reverse_Array.cpp
 │   ├── 02_Alternate_Swap.cpp
 │   ├── 03_Find_Unique.cpp
 │   ├── 04_Common_Elements.cpp
 │   ├── 05_Three_Sum_Triplet.cpp
-│   ├── 06_Sort_0_1.cpp
-│   └── 07_Sort_0_1_2.cpp
+│   ├── 06_sort_0_1.cpp
+│   ├── 07_sort_0_1_2.cpp
+│   ├── 08_First & Last Occurrence.cpp
+│   ├── 09_Total_Occurrences.cpp
+│   ├── 10_Find_Peak_Element.cpp
+│   ├── 11_Find_Pivot.cpp
+│   ├── 12_Search_In_Rotated_Sorted_Array.cpp
+│   ├── 13_Square_Root.cpp
+│   └── README.md
 │
 ├── Python/
 │   └── ...
@@ -32,58 +39,46 @@ I am solving array problems step-by-step to improve:
 ```
 
 ---
+# 📚 Arrays — DSA Practice in C++
 
-# 🧩 Problems Solved
+This folder contains my **Array Data Structure practice in C++**.
 
-| # | Problem | Approach | Time | Space |
-|---|---|---|---|---|
-| 01 | Reverse an Array | Two Pointer | O(n) | O(1) |
-| 02 | Alternate Swap | Two Pointer / Pair Swap | O(n) | O(1) |
-| 03 | Find Unique Element | XOR | O(n) | O(1) |
-| 04 | Find Common Elements | Two Pointer | O(n + m) | O(k) |
-| 05 | Three Sum / Triplet | Three Nested Loops | O(n³) | O(1) |
-| 06 | Sort 0 and 1 | Two Pointer | O(n) | O(1) |
-| 07 | Sort 0, 1 and 2 | Dutch National Flag | O(n) | O(1) |
-| 08 | First & Last Occurrence | Binary Search twice| O(log n) + O(log n) = O(log n)|
-| 09 | First, Last & Total Occurrences | Binary Search | O(log n) | O(1) |
-| 10 | Find Peak Element | Binary Search | O(log n) | O(1) |
-> **Note:** `k` represents the number of common elements stored in the result.
+The problems are focused on:
+- Array traversal
+- Searching
+- Binary Search
+- Array manipulation
+- Two-pointer techniques
+- Sorting
+- XOR
+- Rotated sorted arrays
+- Binary Search based mathematical problems
+
+I am solving these problems step-by-step to strengthen my **DSA fundamentals and problem-solving skills**.
 
 ---
 
-# 01. 🔄 Reverse an Array
+## 📂 Problems
 
-### Problem
+| # | Problem | Approach / Concept | Time Complexity | Space Complexity |
+|---|---|---|---|---|
+| 01 | Reverse Array | Two Pointer | O(n) | O(1) |
+| 02 | Alternate Swap | Array Traversal | O(n) | O(1) |
+| 03 | Find Unique Element | XOR | O(n) | O(1) |
+| 04 | Common Elements | Two Pointer | O(n + m) | O(k) |
+| 05 | Three Sum Triplet | Brute Force | O(n³) | O(1) |
+| 06 | Sort 0 and 1 | Two Pointer | O(n) | O(1) |
+| 07 | Sort 0, 1 and 2 | Dutch National Flag | O(n) | O(1) |
+| 08 | First & Last Occurrence | Binary Search | O(log n) | O(1) |
+| 09 | Total Occurrences | Binary Search | O(log n) | O(1) |
+| 10 | Find Peak Element | Binary Search | O(log n) | O(1) |
+| 11 | Find Pivot | Binary Search | O(log n) | O(1) |
+| 12 | Search in Rotated Sorted Array | Binary Search | O(log n) | O(1) |
+| 13 | Square Root | Binary Search | O(log n) | O(1) |
 
-Reverse the elements of an array in-place.
+---
 
-### Example
 
-```text
-Input:
-1 2 3 4 5
-
-Output:
-5 4 3 2 1
-```
-
-### Approach
-
-Use the **Two Pointer Technique**:
-
-- `start` points to the first element.
-- `end` points to the last element.
-- Swap both elements.
-- Move `start` forward.
-- Move `end` backward.
-- Continue until they meet.
-
-### Complexity
-
-```text
-Time Complexity  : O(n)
-Space Complexity : O(1)
-```
 
 ### File
 
