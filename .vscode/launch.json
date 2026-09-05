@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Bharat Thakur/OneDrive/Desktop/AI/DSA with python/02_Arrays/C++_syntax",
-      "program": "c:/Users/Bharat Thakur/OneDrive/Desktop/AI/DSA with python/02_Arrays/C++_syntax/build/Debug/outDebug",
+      "cwd": "c:/Users/Bharat Thakur/OneDrive/Desktop/AI/DSA with python/08_Maths_problem/03_GCD",
+      "program": "c:/Users/Bharat Thakur/OneDrive/Desktop/AI/DSA with python/08_Maths_problem/03_GCD/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
