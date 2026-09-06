@@ -56,6 +56,35 @@ This solution uses the **subtraction method**:
 5. The final value is the GCD.
 
 ### Example
+## 04. Binary Exponentiation
+
+### Problem Statement
+
+Given three integers `n`, `x`, and `m`, calculate:
+
+`x^n % m`
+
+efficiently using Binary Exponentiation.
+
+### Approach
+
+Instead of multiplying `x` by itself `n` times, Binary Exponentiation reduces the exponent by half in every iteration.
+
+- If `n` is odd, multiply the result by `x`.
+- Square `x`.
+- Divide `n` by 2 using right shift.
+- Continue until `n` becomes `0`.
+
+### Example
+
+```text
+Input:
+n = 5
+x = 2
+m = 10
+
+Output:
+2
 
 ```text
 Input:
