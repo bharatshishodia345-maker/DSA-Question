@@ -44,3 +44,39 @@ Input:
 
 Output:
 1
+
+## 03. First Non-Repeating Element
+
+### Problem Statement
+
+Given an integer array, find the first element whose frequency is exactly one.
+
+### Approach
+
+1. Store the frequency of every element using `unordered_map`.
+2. Traverse the original array again.
+3. Find the first element whose frequency is `1`.
+
+### Complexity
+
+- Time: Average O(n)
+- Space: O(n)
+
+---
+
+## 04. Maximum Frequency Character
+
+### Problem Statement
+
+Given a character array, find the character with the maximum frequency.
+
+### Approach
+
+1. Store the frequency of every character using `unordered_map`.
+2. Traverse the array.
+3. Track the character having the highest frequency.
+
+### Complexity
+
+- Time: Average O(n)
+- Space: O(n)
