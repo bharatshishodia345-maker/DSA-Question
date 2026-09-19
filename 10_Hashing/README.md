@@ -80,3 +80,48 @@ Given a character array, find the character with the maximum frequency.
 
 - Time: Average O(n)
 - Space: O(n)
+
+# Hashing - C++
+
+This folder contains hashing-based problems solved in C++ using `unordered_map`.
+
+---
+
+## 05. Ransom String
+
+### Problem
+Given a ransom string and a magazine string, check whether the ransom string can be formed using characters available in the magazine.
+
+Each character from the magazine can be used according to its available frequency.
+
+### Approach
+- Store the frequency of characters in the ransom string.
+- Store the frequency of characters in the magazine string.
+- For every required character, check whether the magazine has enough occurrences.
+- If any required frequency is greater than the available frequency, the ransom string cannot be formed.
+
+### Time Complexity
+`O(n + m)`
+
+### Space Complexity
+`O(k)`
+
+---
+
+## 06. Anagram Check
+
+### Problem
+Given two strings, check whether both strings contain exactly the same characters with the same frequencies.
+
+### Approach
+- Count the frequency of every character in both strings.
+- Compare the required frequency with the available frequency.
+- If any frequency is different, the strings are not anagrams.
+
+### Example
+
+```text
+String 1: listen
+String 2: silent
+
+Output: Possible
