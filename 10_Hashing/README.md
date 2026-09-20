@@ -120,7 +120,7 @@ Given two strings, check whether both strings contain exactly the same character
 
 ### Example
 
-```text
+```text```
 String 1: listen
 String 2: silent
 
