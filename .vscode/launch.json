@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Users/Bharat Thakur/OneDrive/Desktop/AI/DSA with python/09_Recursion",
-      "program": "c:/Users/Bharat Thakur/OneDrive/Desktop/AI/DSA with python/09_Recursion/build/Debug/outDebug",
+      "cwd": "c:/Users/Bharat Thakur/OneDrive/Desktop/AI/DSA with python",
+      "program": "c:/Users/Bharat Thakur/OneDrive/Desktop/AI/DSA with python/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
