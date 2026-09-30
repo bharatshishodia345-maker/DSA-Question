@@ -9,7 +9,7 @@ int main(){
 	for(int i = 0;i<n;i++){
 		cin>>arr[i];
 	}
-	int max_sum = INT_MIN;
+	int max_sum = INT8_MIN;
 	int cursum = 0;
 	for (int st = 0; st<n;st++){
 		cursum += arr[st];
