@@ -59,3 +59,68 @@ Given a preorder representation of a binary tree where `-1` represents a NULL no
 ```text
 Input:
 1 2 -1 -1 3 4 -1 -1 5 -1 -1
+## 06. Binary Tree Operations
+
+### Description
+This program implements level-order insertion in a binary tree and performs
+three standard tree traversals:
+
+- Inorder Traversal
+- Preorder Traversal
+- Postorder Traversal
+
+### Operations
+
+| Operation | Description |
+|-----------|-------------|
+| `1 value` | Insert a node |
+| `2` | Inorder Traversal |
+| `3` | Preorder Traversal |
+| `4` | Postorder Traversal |
+
+### Traversals
+
+#### Inorder
+Left → Root → Right
+
+#### Preorder
+Root → Left → Right
+
+#### Postorder
+Left → Right → Root
+
+### Complexity
+
+| Operation | Time Complexity |
+|-----------|-----------------|
+| Level-order insertion | O(n) |
+| Inorder traversal | O(n) |
+| Preorder traversal | O(n) |
+| Postorder traversal | O(n) |
+
+Space complexity for traversal: **O(h)** for recursion, where `h` is tree height.
+
+### Example
+
+Input:
+```text
+8
+1 1
+1 2
+1 3
+1 4
+1 5
+2
+3
+4
+
+## 07. Height of Binary Tree
+
+### Description
+Calculates the height of a binary tree using recursion.
+
+### Approach
+The height of a binary tree is calculated as:
+
+```text
+height = max(left subtree height, right subtree height) + 1
