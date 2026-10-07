@@ -124,3 +124,31 @@ The height of a binary tree is calculated as:
 
 ```text
 height = max(left subtree height, right subtree height) + 1
+
+## 10. Same Tree
+
+### Description
+Checks whether two binary trees are identical in both structure and node values.
+
+Two binary trees are considered the same when:
+- Their corresponding nodes have the same values.
+- Their left subtrees are identical.
+- Their right subtrees are identical.
+
+### Approach
+
+The solution uses recursion.
+
+For every pair of corresponding nodes:
+1. If both are `NULL`, return `true`.
+2. If only one is `NULL`, return `false`.
+3. Compare their values.
+4. Recursively compare the left subtrees.
+5. Recursively compare the right subtrees.
+
+### Complexity
+
+- Time: **O(n)**
+- Space: **O(h)**
+
+Where `n` is the number of nodes and `h` is the height of the tree.
