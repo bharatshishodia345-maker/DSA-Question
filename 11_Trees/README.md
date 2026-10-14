@@ -151,4 +151,36 @@ For every pair of corresponding nodes:
 - Time: **O(n)**
 - Space: **O(h)**
 
+
 Where `n` is the number of nodes and `h` is the height of the tree.
+
+
+## 11. Diameter of a Binary Tree
+
+- **File:** `11_Diameter_of_Binary_Tree.cpp`
+- **Language:** C++
+- **Concept:** Binary Tree, Recursion, Tree Height
+- **Approach:** Calculate the height of each subtree and update the maximum diameter using the sum of left and right subtree heights.
+- **Time Complexity:** O(n)
+- **Auxiliary Space Complexity:** O(h), where h is the height of the tree.
+- **Output:** `3`
+
+## 12. Top View of Binary Tree
+
+- **File:** `12_Top_View_of_Binary_Tree.cpp`
+- **Language:** C++
+- **Concept:** Binary Tree, BFS, Queue, Horizontal Distance, Map
+- **Approach:** Level-order traversal records the first node encountered at each horizontal distance.
+- **Time Complexity:** O(n log n)
+- **Space Complexity:** O(n)
+- **Output:** `2 1 3 5`
+
+## 13. Kth Level of Binary Tree
+
+- **File:** `13_Kth_Level_of_Binary_Tree.cpp`
+- **Language:** C++
+- **Concept:** Binary Tree, Recursion
+- **Approach:** Recursively traverse the tree, reducing k by one at each level. Print nodes when k becomes 1.
+- **Time Complexity:** O(n) worst case
+- **Space Complexity:** O(h), where h is the tree height.
+- **Output:** `4 5`
