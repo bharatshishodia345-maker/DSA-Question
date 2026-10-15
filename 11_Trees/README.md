@@ -184,3 +184,13 @@ Where `n` is the number of nodes and `h` is the height of the tree.
 - **Time Complexity:** O(n) worst case
 - **Space Complexity:** O(h), where h is the tree height.
 - **Output:** `4 5`
+
+## 14. Lowest Common Ancestor (LCA)
+
+- **File:** `14_Lowest_Common_Ancestor.cpp`
+- **Language:** C++
+- **Concept:** Binary Tree, Recursion, Lowest Common Ancestor
+- **Approach:** Recursively search the left and right subtrees. If both return a target, the current node is the LCA; otherwise, propagate the non-null result.
+- **Time Complexity:** O(n)
+- **Auxiliary Space Complexity:** O(h), where h is the tree height.
+- **Example:** LCA of nodes 4 and 5 is 2.
