@@ -194,3 +194,32 @@ Where `n` is the number of nodes and `h` is the height of the tree.
 - **Time Complexity:** O(n)
 - **Auxiliary Space Complexity:** O(h), where h is the tree height.
 - **Example:** LCA of nodes 4 and 5 is 2.
+
+## 15. Binary Search Tree Operations
+
+- **File:** `15_Binary_Search_Tree_Operations.cpp`
+- **Language:** C++
+- **Concepts:** Binary Search Tree, Recursion, Searching, Insertion, Deletion, Tree Traversals
+
+### Supported Operations
+
+| Type | Operation |
+|---|---|
+| 1 value | Insert a value |
+| 2 value | Delete a value |
+| 3 value | Search for a value |
+| 4 | Inorder traversal |
+| 5 | Preorder traversal |
+| 6 | Postorder traversal |
+
+### Complexity
+
+Let n be the number of nodes and h be the height of the tree.
+
+- **Insertion:** O(h)
+- **Searching:** O(h)
+- **Deletion:** O(h)
+- **Traversals:** O(n)
+- **Space:** O(h) auxiliary recursion stack for recursive operations
+
+For a balanced BST, h is O(log n). In a highly skewed BST, h can be O(n).
