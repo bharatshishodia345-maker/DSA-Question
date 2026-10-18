@@ -223,3 +223,29 @@ Let n be the number of nodes and h be the height of the tree.
 - **Space:** O(h) auxiliary recursion stack for recursive operations
 
 For a balanced BST, h is O(log n). In a highly skewed BST, h can be O(n).
+
+
+## 16. Diameter from Node Relationships
+- **File:** `16_Diameter_From_Node_Relationships.cpp`
+- **Language:** C++
+- **Concepts:** Binary Tree, Height, Diameter, Recursion, Hash Map
+- **Approach:** Build the tree from parent-child relationships and calculate the maximum sum of left and right subtree heights.
+- **Time Complexity:** O(n)
+- **Auxiliary Space:** O(n)
+
+## 17. BST Level Order Traversal
+- **File:** `17_BST_Level_Order_Traversal.cpp`
+- **Language:** C++
+- **Concepts:** Binary Search Tree, Queue, BFS
+- **Approach:** Insert values into a BST, then traverse level by level using a queue.
+- **Traversal Complexity:** O(n)
+- **Construction Complexity:** O(n log n) average, O(n²) worst case.
+
+## 18. Construct Tree from Inorder and Preorder
+- **File:** `18_Construct_Tree_Inorder_Preorder.cpp`
+- **Language:** C++
+- **Concepts:** Binary Tree, Recursion, Tree Construction, Traversal
+- **Approach:** Use preorder to select roots and an inorder index map to divide the left and right subtrees.
+- **Time Complexity:** O(n) average
+- **Auxiliary Space:** O(n)
+- **Output:** Postorder traversal of the constructed tree.
