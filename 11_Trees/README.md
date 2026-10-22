@@ -457,3 +457,26 @@ Topics progress from basic tree construction and traversal to more advanced prob
 **Language:** C++  
 **Repository:** DSA Practice  
 **Focus:** Data Structures and Algorithms
+
+### 20. Kth Smallest Element in a BST
+
+* **File:** `20_Kth_Smallest_Element_in_BST.cpp`
+* **Language:** C++
+* **Concepts:** Binary Search Tree, Inorder Traversal, Recursion
+* **Approach:** Perform inorder traversal and count the visited nodes. Stop when the kth node is reached.
+* **Time Complexity:** O(n) worst case; traversal may stop earlier after finding the kth element.
+* **Auxiliary Space Complexity:** O(h) for the recursive traversal stack.
+* **Input:** Number of nodes, node values, and `k`.
+* **Output:** The kth smallest element, or `-1` if `k` is invalid.
+
+
+### 21. Maximum Path Sum in a Binary Tree
+
+* **File:** `21_Maximum_Path_Sum_in_Binary_Tree.cpp`
+* **Language:** C++
+* **Concepts:** Binary Tree, Recursion, Tree Dynamic Programming
+* **Approach:** Recursively calculate the maximum extendable path from each subtree. Update the global answer using the current node and its positive left and right contributions.
+* **Time Complexity:** O(n)
+* **Auxiliary Space Complexity:** O(h), where h is the height of the tree.
+* **Output:** The maximum sum of a path between any two nodes. The path may start and end at any nodes.
+
