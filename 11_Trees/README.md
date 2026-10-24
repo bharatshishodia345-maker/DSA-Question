@@ -480,3 +480,14 @@ Topics progress from basic tree construction and traversal to more advanced prob
 * **Auxiliary Space Complexity:** O(h), where h is the height of the tree.
 * **Output:** The maximum sum of a path between any two nodes. The path may start and end at any nodes.
 
+
+
+### 22. Sum of All Subtrees
+
+* **File:** `22_Sum_of_All_Subtrees.cpp`
+* **Language:** C++
+* **Concepts:** Binary Tree, Recursion, Postorder Traversal
+* **Approach:** Recursively calculate the sums of the left and right subtrees, update the current node with its original value plus both subtree sums, and return the updated sum.
+* **Time Complexity:** O(n)
+* **Auxiliary Space Complexity:** O(h), where h is the height of the tree.
+* **Example Output:** `15`
