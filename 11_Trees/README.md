@@ -491,3 +491,12 @@ Topics progress from basic tree construction and traversal to more advanced prob
 * **Time Complexity:** O(n)
 * **Auxiliary Space Complexity:** O(h), where h is the height of the tree.
 * **Example Output:** `15`
+### 23. Maximum Width of Binary Tree
+
+* **File:** `23_Maximum_Width_of_Binary_Tree.cpp`
+* **Language:** C++
+* **Concepts:** Binary Tree, Level Order Traversal, BFS, Queue, Indexing
+* **Approach:** Perform level-order traversal while assigning positional indices to nodes. Calculate each level's width from the first and last positional indices.
+* **Time Complexity:** O(n)
+* **Auxiliary Space Complexity:** O(n)
+* **Output:** Maximum width of the binary tree, including gaps between nodes.
