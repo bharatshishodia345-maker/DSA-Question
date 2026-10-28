@@ -500,3 +500,13 @@ Topics progress from basic tree construction and traversal to more advanced prob
 * **Time Complexity:** O(n)
 * **Auxiliary Space Complexity:** O(n)
 * **Output:** Maximum width of the binary tree, including gaps between nodes.
+
+### 24. Morris Inorder Traversal
+
+* **File:** `24_Morris_Inorder_Traversal.cpp`
+* **Language:** C++
+* **Concepts:** Binary Tree, Inorder Traversal, Threaded Binary Tree
+* **Approach:** Temporarily connect each inorder predecessor to the current node, allowing traversal without recursion or an explicit stack.
+* **Time Complexity:** O(n)
+* **Auxiliary Space Complexity:** O(1) for traversal, excluding the output vector.
+* **Traversal Order:** Left → Root → Right
