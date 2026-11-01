@@ -538,4 +538,28 @@ Topics progress from basic tree construction and traversal to more advanced prob
 * Uses Inorder Successor for the two-child case.
 * Average Time Complexity: O(log N)
 * Worst Time Complexity: O(N)
+### 29. Validate Binary Search Tree
+
+**File:** `29_Validate_Binary_Search_Tree.cpp`
+
+**Language:** C++
+
+**Concepts:** Binary Search Tree, Recursion, Range Validation, Tree Traversal
+
+**Description:**
+
+This program checks whether a given binary tree satisfies the properties of a Binary Search Tree (BST).
+
+**Approach:**
+
+* Constructs a BST using insertion operations.
+* Uses a recursive range-based validation approach.
+* Maintains minimum and maximum allowed values for every node.
+* Checks whether every node follows the BST property.
+
+**Complexity:**
+
+* BST Construction: O(N log N) average
+* Validation: O(N)
+* Auxiliary Space: O(H), where H is the height of the tree.
 
