@@ -562,4 +562,27 @@ This program checks whether a given binary tree satisfies the properties of a Bi
 * BST Construction: O(N log N) average
 * Validation: O(N)
 * Auxiliary Space: O(H), where H is the height of the tree.
+### 30. Balance a Binary Search Tree
+
+**File:** `30_Balance_Binary_Search_Tree.cpp`
+
+**Language:** C++
+
+**Concepts:** Binary Search Tree, Inorder Traversal, Recursion, Balanced BST
+
+**Description:**
+
+This program converts an existing Binary Search Tree into a height-balanced BST while preserving its elements and inorder traversal sequence.
+
+**Approach:**
+
+* Stores the inorder traversal of the original BST in a sorted array.
+* Selects the middle element as the root.
+* Recursively constructs the left and right subtrees.
+* Produces a height-balanced Binary Search Tree.
+
+**Complexity:**
+
+* Time Complexity: O(N)
+* Auxiliary Space Complexity: O(N)
 
