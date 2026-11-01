@@ -13,77 +13,61 @@ public:
     }
 };
 
-// Insert a node into BST
-Node* insert(Node* root, int val) {
-    if (root == nullptr) {
-        return new Node(val);
+// Build Binary Tree using Preorder
+Node* buildTree(vector<int>& preorder, int& idx) {
+    idx++;
+
+    if (idx >= preorder.size() || preorder[idx] == -1) {
+        return nullptr;
     }
 
-    if (val < root->data) {
-        root->left = insert(root->left, val);
-    }
-    else {
-        root->right = insert(root->right, val);
-    }
+    Node* root = new Node(preorder[idx]);
+
+    root->left = buildTree(preorder, idx);
+    root->right = buildTree(preorder, idx);
 
     return root;
 }
 
-// Build BST
-Node* buildTree(vector<int>& nums) {
-    Node* root = nullptr;
-
-    for (int val : nums) {
-        root = insert(root, val);
-    }
-
-    return root;
-}
-
-// Validate BST using range approach
-bool helper(Node* root, long long minVal, long long maxVal) {
+// Validate BST
+bool helper(Node* root, Node* minNode, Node* maxNode) {
     if (root == nullptr) {
         return true;
     }
 
-    if (root->data <= minVal || root->data >= maxVal) {
+    if (minNode != nullptr && root->data <= minNode->data) {
         return false;
     }
 
-    return helper(root->left, minVal, root->data) &&
-           helper(root->right, root->data, maxVal);
-}
-
-// Check whether the tree is a valid BST
-bool isValid(Node* root) {
-    return helper(root, LLONG_MIN, LLONG_MAX);
-}
-
-// Inorder Traversal
-void inorder(Node* root) {
-    if (root == nullptr) {
-        return;
+    if (maxNode != nullptr && root->data >= maxNode->data) {
+        return false;
     }
 
-    inorder(root->left);
-    cout << root->data << " ";
-    inorder(root->right);
+    return helper(root->left, minNode, root) &&
+           helper(root->right, root, maxNode);
+}
+
+// Check BST validity
+bool isValid(Node* root) {
+    return helper(root, nullptr, nullptr);
 }
 
 int main() {
-    vector<int> nums = {3, 2, 1, 5, 6, 4};
 
-    Node* root = buildTree(nums);
+    // Preorder: -1 represents NULL
+    vector<int> preorder = {
+        3, 2, 1, -1, -1, -1, 5, 4, -1, -1, 6, -1, -1
+    };
 
-    cout << "Inorder Traversal: ";
-    inorder(root);
-    cout << endl;
+    int idx = -1;
+
+    Node* root = buildTree(preorder, idx);
 
     if (isValid(root)) {
-        cout << "Valid Binary Search Tree" << endl;
+        cout << "Yes" << endl;
     }
     else {
-        cout << "Invalid Binary Search Tree" << endl;
+        cout << "No" << endl;
     }
 
     return 0;
