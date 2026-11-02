@@ -585,4 +585,27 @@ This program converts an existing Binary Search Tree into a height-balanced BST 
 
 * Time Complexity: O(N)
 * Auxiliary Space Complexity: O(N)
+### 31. Minimum Difference in Binary Search Tree
+
+**File:** `31_Minimum_Difference_in_BST.cpp`
+
+**Language:** C++
+
+**Concepts:** Binary Search Tree, Inorder Traversal, Recursion, Tree Properties
+
+**Description:**
+
+This program finds the minimum absolute difference between the values of any two nodes in a Binary Search Tree.
+
+**Approach:**
+
+* Performs inorder traversal of the BST.
+* Maintains a pointer to the previously visited node.
+* Calculates the difference between consecutive nodes.
+* Updates the minimum difference whenever a smaller difference is found.
+
+**Complexity:**
+
+* Time Complexity: O(N)
+* Auxiliary Space Complexity: O(H), due to recursion stack.
 
