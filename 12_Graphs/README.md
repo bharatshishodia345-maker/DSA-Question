@@ -28,3 +28,27 @@ This program implements an undirected graph using an adjacency list. It supports
 * Print adjacency matrix: O(V²)
 
 Here, V is the number of vertices. The exact operation costs depend on the `map` and `set` implementations and their operations.
+### 02. Breadth First Search (BFS) Traversal
+
+**File:** `02_BFS_Traversal.cpp`
+
+**Language:** C++
+
+**Concepts:** Graph, BFS, Queue, Adjacency Matrix, Level Order Traversal
+
+**Description:**
+
+This program implements Breadth First Search (BFS) to traverse an undirected graph level by level using an adjacency matrix.
+
+**Approach:**
+
+* Uses a queue to maintain the traversal order.
+* Uses a visited array to avoid visiting nodes more than once.
+* Explores all adjacent unvisited vertices.
+* Prints each BFS level on a separate line.
+
+**Complexity:**
+
+* Time Complexity: O(V²)
+* Space Complexity: O(V²), including the adjacency matrix.
+* Auxiliary Space: O(V), for the queue and visited array.
