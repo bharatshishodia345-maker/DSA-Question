@@ -52,3 +52,12 @@ This program implements Breadth First Search (BFS) to traverse an undirected gra
 * Time Complexity: O(V²)
 * Space Complexity: O(V²), including the adjacency matrix.
 * Auxiliary Space: O(V), for the queue and visited array.
+### 03. Topological Sort using Kahn's Algorithm
+
+- Implemented Topological Sorting using BFS.
+- Used Indegree to identify nodes with no incoming edges.
+- Used Min Heap to process the smallest available node first.
+- Detected cycles in a directed graph.
+
+**Time Complexity:** O(V log V + E)  
+**Space Complexity:** O(V + E)
