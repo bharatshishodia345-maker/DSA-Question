@@ -609,3 +609,11 @@ This program finds the minimum absolute difference between the values of any two
 * Time Complexity: O(N)
 * Auxiliary Space Complexity: O(H), due to recursion stack.
 
+### 32. Kth Smallest Element in BST (Global Counter Approach)
+
+- Implemented Kth Smallest Element using recursive Inorder Traversal.
+- Used a global counter to track visited nodes.
+- Returns the Kth smallest element when the counter reaches K.
+
+**Time Complexity:** O(H + K), worst case O(N)  
+**Space Complexity:** O(H)
