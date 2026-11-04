@@ -19,7 +19,8 @@ Node* insert(Node* root, int value) {
 
     if (value < root->data) {
         root->left = insert(root->left, value);
-    } else {
+    }
+    else {
         root->right = insert(root->right, value);
     }
 
@@ -31,12 +32,14 @@ void inorder(Node* root, int k, int& count, int& answer) {
         return;
     }
 
+    // Visit left subtree
     inorder(root->left, k, count, answer);
 
     if (count >= k) {
         return;
     }
 
+    // Visit root
     count++;
 
     if (count == k) {
@@ -44,6 +47,7 @@ void inorder(Node* root, int k, int& count, int& answer) {
         return;
     }
 
+    // Visit right subtree
     inorder(root->right, k, count, answer);
 }
 
@@ -73,4 +77,3 @@ int main() {
 
     return 0;
 }
-
