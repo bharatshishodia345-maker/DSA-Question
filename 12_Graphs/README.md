@@ -61,3 +61,13 @@ This program implements Breadth First Search (BFS) to traverse an undirected gra
 
 **Time Complexity:** O(V log V + E)  
 **Space Complexity:** O(V + E)
+
+### 04. Bipartite Graph Check using BFS
+
+- Implemented Bipartite Graph checking using BFS.
+- Used two-coloring technique to divide vertices into two groups.
+- Detected conflicts when adjacent vertices have the same color.
+- Handled disconnected graph components.
+
+**Time Complexity:** O(V²)  
+**Space Complexity:** O(V²)
