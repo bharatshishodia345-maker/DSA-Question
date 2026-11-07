@@ -71,3 +71,12 @@ This program implements Breadth First Search (BFS) to traverse an undirected gra
 
 **Time Complexity:** O(V²)  
 **Space Complexity:** O(V²)
+### 05. Depth First Search (DFS) Traversal
+
+- Implemented DFS using recursion.
+- Used an adjacency matrix to represent the undirected graph.
+- Used a visited array to avoid revisiting nodes.
+- Explored each node deeply before backtracking.
+
+**Time Complexity:** O(V²)  
+**Space Complexity:** O(V²)
