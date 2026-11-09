@@ -80,3 +80,13 @@ This program implements Breadth First Search (BFS) to traverse an undirected gra
 
 **Time Complexity:** O(V²)  
 **Space Complexity:** O(V²)
+
+### 06. Island Quest (Number of Islands)
+
+- Implemented island counting using DFS.
+- Used a 2D grid to represent land and water.
+- Explored connected land cells in four directions.
+- Used a visited matrix to avoid revisiting cells.
+
+**Time Complexity:** O(R × C)  
+**Space Complexity:** O(R × C)
