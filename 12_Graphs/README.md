@@ -90,3 +90,14 @@ This program implements Breadth First Search (BFS) to traverse an undirected gra
 
 **Time Complexity:** O(R × C)  
 **Space Complexity:** O(R × C)
+
+### 07. Topological Sort using Adjacency Matrix
+
+- Implemented Topological Sorting using Kahn's Algorithm.
+- Used an adjacency matrix to represent a directed graph.
+- Calculated indegree of every vertex.
+- Used a Min Heap to process the smallest available vertex first.
+- Detected cycles in the graph.
+
+**Time Complexity:** O(V² + V log V)  
+**Space Complexity:** O(V²)
