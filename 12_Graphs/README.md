@@ -101,3 +101,14 @@ This program implements Breadth First Search (BFS) to traverse an undirected gra
 
 **Time Complexity:** O(V² + V log V)  
 **Space Complexity:** O(V²)
+
+### 08. Connected Components using DFS
+
+- Implemented Connected Components detection using DFS.
+- Used an adjacency matrix for graph representation.
+- Used a visited array to track explored vertices.
+- Stored each connected component separately.
+- Sorted vertices within each component before printing.
+
+**Time Complexity:** O(V² + V log V)
+**Space Complexity:** O(V²)
