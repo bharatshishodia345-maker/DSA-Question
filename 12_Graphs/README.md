@@ -112,3 +112,13 @@ This program implements Breadth First Search (BFS) to traverse an undirected gra
 
 **Time Complexity:** O(V² + V log V)
 **Space Complexity:** O(V²)
+### 09. Minimum Edges to Connect a Graph
+
+- Implemented Connected Components detection using DFS.
+- Used an adjacency list for graph representation.
+- Counted disconnected components.
+- Calculated the minimum edges required to connect all components.
+- Checked whether enough edges are available.
+
+**Time Complexity:** O(V + E)
+**Space Complexity:** O(V + E)
