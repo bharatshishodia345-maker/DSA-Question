@@ -617,3 +617,13 @@ This program finds the minimum absolute difference between the values of any two
 
 **Time Complexity:** O(H + K), worst case O(N)  
 **Space Complexity:** O(H)
+### 33. Huffman Coding using Greedy Algorithm
+
+- Implemented Huffman Coding using a Binary Tree.
+- Used a Min Priority Queue to select two minimum-frequency nodes.
+- Constructed a Huffman Tree by combining frequency nodes.
+- Generated binary codes using Preorder Traversal.
+- Used insertion order for deterministic tie-breaking.
+
+**Time Complexity:** O(N log N)
+**Space Complexity:** O(N)
