@@ -627,3 +627,12 @@ This program finds the minimum absolute difference between the values of any two
 
 **Time Complexity:** O(N log N)
 **Space Complexity:** O(N)
+### 34. Height of Binary Tree
+
+- Constructed a Binary Tree using Level Order Traversal.
+- Used a Queue to insert nodes level by level.
+- Calculated the maximum height using Recursive DFS.
+- Compared left and right subtree heights to find the maximum depth.
+
+**Time Complexity:** O(N)
+**Space Complexity:** O(N)
