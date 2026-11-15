@@ -636,3 +636,13 @@ This program finds the minimum absolute difference between the values of any two
 
 **Time Complexity:** O(N)
 **Space Complexity:** O(N)
+### 35. Maximum Path Sum in Binary Tree
+
+- Constructed a Binary Tree using Level Order Traversal.
+- Used Recursive DFS to calculate maximum path sums.
+- Calculated the maximum path passing through each node.
+- Handled negative node values using max(0, subtree sum).
+- Updated the global maximum path sum at every node.
+
+**Time Complexity:** O(N)
+**Space Complexity:** O(H) Auxiliary Space
