@@ -122,3 +122,14 @@ This program implements Breadth First Search (BFS) to traverse an undirected gra
 
 **Time Complexity:** O(V + E)
 **Space Complexity:** O(V + E)
+
+### 10. Longest Path in DAG using Topological Sort
+
+- Implemented Topological Sorting using Kahn's Algorithm.
+- Used BFS and an Indegree Array.
+- Calculated the longest path ending at each vertex.
+- Used Dynamic Programming to update maximum time values.
+- Added cycle detection to verify whether the graph is a DAG.
+
+**Time Complexity:** O(V + E)
+**Space Complexity:** O(V + E)
